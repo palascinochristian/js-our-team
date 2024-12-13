@@ -81,6 +81,69 @@ header p {
     font-size: 1.5625rem;
 }
 
+/*-------------
+     FORM
+--------------*/
+form.row{
+    flex-direction: column;
+    align-content: center;
+    gap: .625rem;
+    border: .125rem dashed #E53170;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 1.25rem;
+    margin-bottom: 10vh;
+}
+
+label{
+    font-size: 1.25rem;
+    margin-right: 10px;
+    display: block;
+    text-align: center;
+}
+
+input{
+    font-size: inherit;
+    font-family: inherit;
+    border: .125rem solid #E53170;
+    border-radius: .3125rem;
+    width: 100%;
+}
+.form h2{
+    color:#E53170;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.col-xl{
+    text-align: center;
+}
+.btn{
+    cursor: pointer;
+    border: .125rem solid #E53170;
+    border-radius: .3125rem;
+    padding: .3125rem .9375rem;
+    font-family: inherit;
+    font-size: 20px;
+    margin-top: .9375rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+    
+}
+.btn:hover{
+    scale: 1.2;
+    color: #E53170;
+    
+}
+
+
+
+
 
 /*-------------
   MEDIA QUERY
