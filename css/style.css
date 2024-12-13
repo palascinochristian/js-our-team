@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    max-width: 75rem;
+    max-width: 78.125rem;
     margin: 0 auto;
 }
 
@@ -67,16 +67,18 @@ h2 {
 --------------*/
 header {
     text-align: center;
-    margin-bottom: 6.25rem
+    margin-top: 1.875rem;
+    margin-bottom: 3.75rem;
 }
 
 header h1 {
     font-size: 3.75rem;
-    color: #E53170
+    color: #E53170;
+    margin-bottom: 3.125rem
 }
 
 header p {
-    font-size: 1.5625rem
+    font-size: 1.5625rem;
 }
 
 
