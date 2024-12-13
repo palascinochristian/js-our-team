@@ -72,5 +72,34 @@ const teamMembers = [
 const membersSection = document.getElementById("members");
 
 // Stampo l'array di oggetti al log della pagina
-rendArray()
+rendArray();
 
+
+// BONUS - FORM PER AGGIUNTA MEMBRI
+const addMemberForm = document.getElementById("addUser");
+const userName = document.getElementById("userName");
+const userRole = document.getElementById("userRole");
+const userEmail = document.getElementById("userEmail");
+const userImg = document.getElementById("userImg");
+const section = document.getElementById("form")
+
+
+//Submit del form
+addMemberForm.addEventListener("submit", (event) =>{
+ event.preventDefault();
+
+ const name = userName.value;
+ const role = userRole.value;
+ const email = userEmail.value;
+ const img= userImg.value;
+
+ const newMember = {
+  name,
+  role,
+  email,
+  img
+ };
+
+ teamMembers.push(newMember);
+ rendArray();
+})
