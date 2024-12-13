@@ -1,3 +1,34 @@
+// FUNCTIONS
+
+// Funzione che crea una card per ogni membro
+const addNewMember = (member) => {
+  const { name, role, email, img } = member;
+  const colCard = `
+   <div class="col card">
+                <div class="member">
+                    <div class="image">
+                        <img class="img-fluid" src="${img}" alt="${name}">
+                    </div>
+                    <div class="member-info">
+                        <h2>${name}</h2>
+                        <p>${role}</p>
+                        <a href="${email}">${email}</a>
+                    </div>
+                </div>
+            </div>`;
+  return colCard;
+}
+
+// Funzione che stampa l'array' dei membri 
+const rendArray = () => {
+  let memberList = "";
+  for (let i = 0; i < teamMembers.length; i++) {
+    memberList += addNewMember(teamMembers[i])
+  }
+  membersSection.innerHTML = memberList;
+}
+// VARIABLES
+
 const teamMembers = [
   {
     name: "Marco Bianchi",
@@ -36,3 +67,10 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//DOM ELEMENTS
+const membersSection = document.getElementById("members");
+
+// Stampo l'array di oggetti al log della pagina
+rendArray()
+
